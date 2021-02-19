@@ -533,7 +533,6 @@
 				547B46D31F46F1FE0029781C /* Frameworks */,
 				547B46D91F46F1FE0029781C /* Resources */,
 				547B46DF1F46F1FE0029781C /* Embed Frameworks */,
-				548F80C52003DAD20052FF27 /* Remove simulator architecture from Jumio frameworks */,
 			);
 			buildRules = (
 			);
@@ -553,7 +552,6 @@
 				EE01EEE41924A3E200B7CC49 /* Frameworks */,
 				EE01EEE51924A3E200B7CC49 /* Resources */,
 				541724EA1D3E6E22007143A3 /* Embed Frameworks */,
-				5403C6E61FFF73A6000818EB /* Remove simulator architecture from Jumio frameworks */,
 			);
 			buildRules = (
 			);
@@ -677,20 +675,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5403C6E61FFF73A6000818EB /* Remove simulator architecture from Jumio frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Remove simulator architecture from Jumio frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [[ \"$CONFIGURATION\" == \"Release\" ]]; then\n  $PROJECT_DIR/remove-simulator-architecture.sh\nfi\n";
-		};
 		544FDA8C21FA39190036ACED /* Checkout Jumio frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -728,20 +712,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "$PROJECT_DIR/jumio-sdk-checkout.sh\n";
-		};
-		548F80C52003DAD20052FF27 /* Remove simulator architecture from Jumio frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Remove simulator architecture from Jumio frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [[ \"$CONFIGURATION\" == \"Release\" ]]; then\n  $PROJECT_DIR/remove-simulator-architecture.sh\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
